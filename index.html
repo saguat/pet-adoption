@@ -111,55 +111,27 @@
   <div class="pagina2-wrapper" id="view-pets">
     <div class="pagina2">
       <h2 class="titolo-pagina2">Meet Our Friends</h2>
-      <p class="selezione-pagina2">Show me: <button>All Pets</button> <button>Only Dogs</button> <button>Only
-          Cats</button></p>
+      <p class="selezione-pagina2">Show me: <button class="active" data-filter="all">All Pets</button> <button
+          data-filter="dog">Only Dogs</button>
+        <button data-filter="cat">Only
+          Cats</button>
+      </p>
+
       <div class="pet-cards">
-        <div class="pet-card">
-          <div class="pet-description">
-            <h3>Barksalot</h3>
-            <p class="descrizione">Barksalot is a sweet and lovable 3 year old ball of fluff. He loves carrots, celery,
-              and playing fetch.</p>
-            <p class="età">2 years old</p>
+
+        <template id="pet-card-template">
+          <div class="pet-card">
+            <div class="pet-description">
+              <h3></h3>
+              <p class="descrizione"></p>
+              <p class="età"></p>
+            </div>
+            <div class="pet-immagine">
+              <img src="immagini\barksalot.jpg" alt="Cane bianco peloso">
+            </div>
           </div>
-          <div class="pet-immagine">
-            <img src="immagini\barksalot.jpg" alt="Cane bianco peloso">
-          </div>
-        </div><!--fine pet card-->
-        <div class="pet-card">
-          <div class="pet-description">
-            <h3>Meowsalot</h3>
-            <p class="descrizione">Meowsalot is the most talkative cat we&#39;ve ever come across. Constant meowing,
-              chirping and purring!</p>
-            <p class="età">1 year old</p>
-          </div>
-          <div class="pet-immagine">
-            <img src="immagini\meowsalot.jpg" alt="Gatto bianco e nero">
-          </div>
-        </div><!--fine pet card-->
-        <div class="pet-card">
-          <div class="pet-description">
-            <h3>Woof</h3>
-            <p class="descrizione">Woof is a very talkative and sweet pup. She loves beets, plums, cuddles and jumping
-              over low fences.</p>
-            <p class="età">Less than a year old</p>
-          </div>
-          <div class="pet-immagine">
-            <img src="immagini\Woof.jpg" alt="Cane marrone e bianco che sorride">
-          </div>
-        </div><!--fine pet card-->
-        <div class="pet-card">
-          <div class="pet-description">
-            <h3>Purrsloud</h3>
-            <p class="descrizione">Purrsloud has the loudest and most relaxing purr that&#39;s come through our center.
-              Come
-              hear it yourself.
-            </p>
-            <p class="età">4 years old</p>
-          </div>
-          <div class="pet-immagine">
-            <img src="immagini\Purrsloud.jpg" alt="Gatto marrone striato">
-          </div>
-        </div><!--fine pet card-->
+        </template>
+
       </div><!--fine tutte le pet cards-->
     </div>
   </div>

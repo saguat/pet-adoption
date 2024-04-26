@@ -148,6 +148,17 @@ body {
   color: #9F9F9F;
   font-family: "Source Sans 3", sans-serif;
   font-size: 1.375rem;
+  cursor: pointer;
+}
+
+.selezione-pagina2 button:hover {
+  color: #7d7d7d;
+}
+
+.selezione-pagina2 .active,
+.selezione-pagina2 .active:hover {
+  color: #475AFF;
+  text-decoration: underline;
 }
 
 .pet-cards {
