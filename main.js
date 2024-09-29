@@ -34,7 +34,7 @@ async function petsArea() {
   document.querySelector(".pet-cards").appendChild(wrapper)
 }
 
-petsArea()
+petsArea();
 
 function createAgeText(birthYear) {
   const currentYear = new Date().getFullYear()
