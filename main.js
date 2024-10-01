@@ -64,9 +64,9 @@ function handleButtonClick(e) {
   const currentFilter = e.target.dataset.filter
   document.querySelectorAll(".pet-card").forEach(el => {
     if (currentFilter == el.dataset.species || currentFilter == "all") {
-      el.style.display = "grid"
+      el.style.display = "grid";
     } else {
-      el.style.display = "none"
+      el.style.display = "none";
     }
   })
 }
